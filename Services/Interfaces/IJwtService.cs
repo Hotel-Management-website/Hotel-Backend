@@ -6,6 +6,6 @@ namespace HotelBookingAPI.Services.Interfaces
     {
         string GenerateAccessToken(User user);
         string GenerateRefreshToken();
-        int? GetUserIdFromToken(string token);
+        int GetUserIdFromToken(string token);
     }
 }
