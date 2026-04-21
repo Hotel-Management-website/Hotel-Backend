@@ -3,7 +3,7 @@ using HotelBookingAPI.Services.Interfaces;
 using MailKit.Net.Smtp;
 using MimeKit;
 
-namespace HotelBooking.API.Services;
+namespace HotelBookingAPI.Services;
 
 public class EmailService : IEmailService
 {

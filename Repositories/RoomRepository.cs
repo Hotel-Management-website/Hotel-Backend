@@ -3,7 +3,7 @@ using HotelBookingAPI.Models;
 using HotelBookingAPI.Repositories.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelBooking.API.Repositories;
+namespace HotelBookingAPI.Repositories;
 
 public class RoomRepository : IRoomRepository
 {

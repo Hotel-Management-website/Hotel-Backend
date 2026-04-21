@@ -4,7 +4,7 @@ using HotelBookingAPI.Models;
 using HotelBookingAPI.Repositories.Interfaces;
 using HotelBookingAPI.Services.Interfaces;
 
-namespace HotelBooking.API.Services;
+namespace HotelBookingAPI.Services;
 
 public class BookingService : IBookingService
 {

@@ -2,7 +2,7 @@
 using HotelBookingAPI.Services.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelBooking.API.Services;
+namespace HotelBookingAPI.Services;
 
 public class AvailabilityService : IAvailabilityService
 {
