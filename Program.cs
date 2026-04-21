@@ -1,7 +1,7 @@
 ﻿
+using HotelBookingAPI.Repositories;
 using HotelBookingAPI.Data;
 using HotelBookingAPI.Middleware;
-using HotelBookingAPI.Repositories;
 using HotelBookingAPI.Repositories.Interfaces;
 using HotelBookingAPI.Services;
 using HotelBookingAPI.Services.Interfaces;
