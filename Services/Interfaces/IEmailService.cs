@@ -1,4 +1,4 @@
-﻿using HotelBookingAPI.DTOs.Booking;
+﻿using HotelBooking.API.DTOs.Booking;
 
 namespace HotelBookingAPI.Services.Interfaces
 {
