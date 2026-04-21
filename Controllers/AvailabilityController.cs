@@ -1,12 +1,24 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using HotelBookingAPI.Helpers;
+using HotelBookingAPI.Services.Interfaces;
+using Microsoft.AspNetCore.Mvc;
 
-namespace HotelBookingAPI.Controllers
+namespace HotelBooking.API.Controllers;
+
+[ApiController]
+[Route("api/availability")]
+public class AvailabilityController : ControllerBase
 {
-    public class AvailabilityController : Controller
+    private readonly IAvailabilityService _service;
+
+    public AvailabilityController(IAvailabilityService service)
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
+        _service = service;
+    }
+
+    [HttpGet("{roomId}")]
+    public async Task<IActionResult> Check(int roomId, DateTime checkIn, DateTime checkOut)
+    {
+        var available = await _service.IsRoomAvailableAsync(roomId, checkIn, checkOut);
+        return Ok(ApiHelper.Success(available));
     }
 }
